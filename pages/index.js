@@ -1,12 +1,19 @@
 import Link from "next/link";
 
-export default function IndexPage() {
+export default function FirstPost() {
   return (
-    <div>
-      Hello World. Testv2
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </div>
+    <>
+      <head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
+
+      <h1>First Post</h1>
+      <h2>
+        <Link href="/">
+          <a>Back to home</a>
+        </Link>
+      </h2>
+    </>
   );
 }
